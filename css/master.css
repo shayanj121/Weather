@@ -136,3 +136,81 @@ main{
         }
     }
 }
+.footer{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    animation: anime 10s infinite alternate linear;
+    &:hover{
+        >.href{
+            left: -50px;
+        }
+    }
+    
+    >img{
+        z-index: 10;
+        width: 95%;
+        height: 95%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+.href{
+    
+    width: 50px;
+    height: 100px;
+    background-color: rgba(162, 102, 24, 0);
+    position: absolute;
+    top: 0;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    transition: .3s;
+    a{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    >i{
+        color: rgb(255, 255, 255);
+        font-size: 22px;
+
+    }
+}
+}
+@keyframes anime{
+    0%{
+        border-radius: 38% 62% 56% 44% / 64% 35% 65% 36% ;
+    }
+    15%{
+        border-radius: 41% 59% 61% 39% / 71% 0% 85% 29%  ;
+    }
+    30%{
+        border-radius: 14% 86% 18% 82% / 80% 20% 80% 20% ;
+    }
+    45%{
+        border-radius: 41% 59% 24% 76% / 54% 20% 80% 46% ;
+    }
+    60%{
+        border-radius: 41% 59% 61% 39% / 22% 77% 23% 78%  ;
+    }
+    75%{
+        border-radius: 71% 29% 65% 35% / 28% 44% 56% 72% ;
+    }
+    90%{
+        border-radius: 29% 71% 33% 67% / 71% 84% 16% 29% ;
+    }
+    100%{border-radius: 41% 59% 61% 39% / 71% 34% 66% 29% ;}
+}
