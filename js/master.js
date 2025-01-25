@@ -11,7 +11,7 @@ const icon = document.querySelector('img')
 
 
 
-const API_URL = "http://api.weatherapi.com/v1/current.json";
+const API_URL = "https://api.weatherapi.com/v1/current.json";
 const API_KEY = "183c515c4bc6405e94e223957252401";
 let LOCATION = "tehran";
 const REFRESH_INTERVAL = 300000;
